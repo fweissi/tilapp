@@ -96,3 +96,7 @@ extension Future where T: User {
         }
     }
 }
+
+extension User: TokenAuthenticatable {
+    typealias TokenType = Token
+}
