@@ -1,0 +1,4 @@
+module CNIOZlib {
+    umbrella "/Users/fweissi/Projects/TILApp/.build/checkouts/swift-nio/Sources/CNIOZlib/include"
+    export *
+}

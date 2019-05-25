@@ -1,0 +1,4 @@
+module CNIODarwin {
+    umbrella "/Users/fweissi/Projects/TILApp/.build/checkouts/swift-nio/Sources/CNIODarwin/include"
+    export *
+}

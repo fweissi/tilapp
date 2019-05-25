@@ -1,0 +1,4 @@
+module CNIOSHA1 {
+    umbrella "/Users/fweissi/Projects/TILApp/.build/checkouts/swift-nio/Sources/CNIOSHA1/include"
+    export *
+}

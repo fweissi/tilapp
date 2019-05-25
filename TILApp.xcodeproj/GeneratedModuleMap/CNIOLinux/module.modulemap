@@ -1,0 +1,4 @@
+module CNIOLinux {
+    umbrella "/Users/fweissi/Projects/TILApp/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+    export *
+}
