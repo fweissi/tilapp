@@ -42,7 +42,7 @@ struct WebsiteController: RouteCollection {
         authSessionRoutes.get("categories", Category.parameter, use: categoryHandler)
         authSessionRoutes.get("login", use: loginHandler)
         authSessionRoutes.post(LoginPostData.self, at: "login", use: loginPostHandler)
-        authSessionRoutes.post("logout", use: loginHandler)
+        authSessionRoutes.post("logout", use: logoutHandler)
         
         let protectedRoutes = authSessionRoutes.grouped(RedirectMiddleware<User>(path: "/login"))
         protectedRoutes.get("acronyms", "create", use: createAcronymHandler)
@@ -58,9 +58,11 @@ struct WebsiteController: RouteCollection {
             .flatMap(to: View.self) { acronyms in
                 let acronymsData = acronyms.isEmpty ? nil : acronyms
                 let userLoggedIn = try req.isAuthenticated(User.self)
+                let showCookiesMessage = req.http.cookies["cookies-accepted"] == nil
                 let context = IndexContext(title: "Homepage",
                                            acronyms: acronymsData,
-                                           userLoggedIn: userLoggedIn)
+                                           userLoggedIn: userLoggedIn,
+                                           showCookieMessage: showCookiesMessage)
                 return try req.view().render("index", context)
         }
     }
@@ -259,6 +261,7 @@ struct IndexContext: Encodable {
     let title: String
     let acronyms: [Acronym]?
     let userLoggedIn: Bool
+    let showCookieMessage: Bool
 }
 
 struct AcronymContext: Encodable {
