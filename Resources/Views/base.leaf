@@ -11,7 +11,7 @@
     #if(title == "Edit Acronym") {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" integrity="sha384-HIipfSYbpCkh5/1V87AWAeR5SUrNiewznrUrtNz1ux4uneLhsAKzv/0FnMbj3m6g" crossorigin="anonymous">
     }
-    <link rel="stylesheet" href"/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <title>#(title) | Acronyms</title>
   </head>
   <body>

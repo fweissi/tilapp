@@ -3,7 +3,8 @@
 <h1>Acronyms</h1>
 
 #if(acronyms) {
-<table class="table table-bordered table-hover">
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table table-bordered table-striped table-hover mb-0">
   <thead class="thead-light">
     <tr>
       <th>
@@ -27,6 +28,7 @@
     }
   </tbody>
 </table>
+</div>
 } else {
 <h2>There aren't any acronyms yet!</h2>
 }
