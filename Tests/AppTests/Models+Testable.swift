@@ -18,7 +18,8 @@ extension User {
     let user = User(
         name: name,
         username: createUsername,
-        password: password)
+        password: password,
+        email: "\(createUsername)@test.com")
     return try user.save(on: connection).wait()
   }
 }

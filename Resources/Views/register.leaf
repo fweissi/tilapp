@@ -19,6 +19,11 @@
         </div>
         
         <div class="form-group">
+            <label form="emailAddress">Email Address</label>
+            <input type="email" name="emailAddress" class="form-control" id="emailAddress"/>
+        </div>
+        
+        <div class="form-group">
             <label form="password">Password</label>
             <input type="password" name="password" class="form-control" id="password"/>
         </div>

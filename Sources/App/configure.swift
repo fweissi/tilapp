@@ -30,6 +30,7 @@ import FluentPostgreSQL
 import Vapor
 import Leaf
 import Authentication
+import SendGrid
 
 /// Called before your application initializes.
 ///
@@ -43,6 +44,7 @@ public func configure(
     try services.register(FluentPostgreSQLProvider())
     try services.register(LeafProvider())
     try services.register(AuthenticationProvider())
+    try services.register(SendGridProvider())
     
     // Register routes to the router
     let router = EngineRouter.default()
@@ -108,4 +110,11 @@ public func configure(
     
     config.prefer(LeafRenderer.self, for: ViewRenderer.self)
     config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
+    
+    guard let sendGridAPIKey = Environment.get("SENDGRID_API_KEY") else {
+        fatalError("No Send Grid API Key specified.")
+    }
+    
+    let sendGridConfig = SendGridConfig(apiKey: sendGridAPIKey)
+    services.register(sendGridConfig)
 }

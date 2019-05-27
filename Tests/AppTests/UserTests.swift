@@ -39,7 +39,8 @@ final class UserTests : XCTestCase {
     let user = User(
         name: usersName,
         username: usersUsername,
-        password: "password")
+        password: "password",
+        email: "\(usersUsername)@test.com")
     let receivedUser = try app.getResponse(
         to: usersURI,
         method: .POST,

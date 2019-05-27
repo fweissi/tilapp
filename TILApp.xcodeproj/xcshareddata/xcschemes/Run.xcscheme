@@ -62,6 +62,19 @@
             ReferencedContainer = "container:TILApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = ""
+            isEnabled = "NO">
+         </CommandLineArgument>
+      </CommandLineArguments>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "SENDGRID_API_KEY"
+            value = "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"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

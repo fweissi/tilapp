@@ -45,6 +45,7 @@ struct WebsiteController: RouteCollection {
         authSessionRoutes.post("logout", use: logoutHandler)
         authSessionRoutes.get("register", use: registerHandler)
         authSessionRoutes.post(RegisterData.self, at: "register", use: registerPostHandler)
+        authSessionRoutes.get("forgottenPassword", use: forgottenPasswordHandler)
         
         let protectedRoutes = authSessionRoutes.grouped(RedirectMiddleware<User>(path: "/login"))
         protectedRoutes.get("acronyms", "create", use: createAcronymHandler)
@@ -300,11 +301,16 @@ struct WebsiteController: RouteCollection {
         let user = User(
             name: data.name,
             username: data.username,
-            password: password)
+            password: password,
+            email: data.emailAddress)
         return user.save(on: req).map(to: Response.self, { (user) in
             try req.authenticateSession(user)
             return req.redirect(to: "/")
         })
+    }
+    
+    func forgottenPasswordHandler(_ req: Request) throws -> Future<View> {
+        return try req.view().render("forgettonPassword", ["title": "Reset Your Password"])
     }
 }
 
@@ -391,6 +397,7 @@ struct RegisterData: Content {
     let username: String
     let password: String
     let confirmPassword: String
+    let emailAddress: String
 }
 
 extension RegisterData: Validatable, Reflectable {
@@ -399,6 +406,7 @@ extension RegisterData: Validatable, Reflectable {
         try validations.add(\.name, .ascii)
         try validations.add(\.username, .alphanumeric && .count(3...))
         try validations.add(\.password, .count(8...))
+        try validations.add(\.emailAddress, .email)
         
         validations.add("passwords match") { (model) in
             guard model.password == model.confirmPassword else {
