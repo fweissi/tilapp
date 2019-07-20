@@ -30,6 +30,7 @@ import Vapor
 import Leaf
 import Authentication
 import Fluent
+import SendGrid
 
 struct WebsiteController: RouteCollection {
     func boot(router: Router) throws {
@@ -46,6 +47,9 @@ struct WebsiteController: RouteCollection {
         authSessionRoutes.get("register", use: registerHandler)
         authSessionRoutes.post(RegisterData.self, at: "register", use: registerPostHandler)
         authSessionRoutes.get("forgottenPassword", use: forgottenPasswordHandler)
+        authSessionRoutes.post("forgottenPassword", use: forgottenPasswordPostHandler)
+        authSessionRoutes.get("resetPassword", use: resetPasswordHandler)
+        authSessionRoutes.post(ResetPasswordData.self, at: "resetPassword", use:resetPasswordPostHandler)
         
         let protectedRoutes = authSessionRoutes.grouped(RedirectMiddleware<User>(path: "/login"))
         protectedRoutes.get("acronyms", "create", use: createAcronymHandler)
@@ -310,7 +314,131 @@ struct WebsiteController: RouteCollection {
     }
     
     func forgottenPasswordHandler(_ req: Request) throws -> Future<View> {
-        return try req.view().render("forgettonPassword", ["title": "Reset Your Password"])
+        return try req.view().render("forgottenPassword", ["title": "Reset Your Password"])
+    }
+    
+    func forgottenPasswordPostHandler(_ req: Request) throws -> Future<View> {
+        let email = try req.content.syncGet(String.self, at: "email")
+        return User.query(on: req)
+            .filter(\.email, .equal, email)
+            .first()
+            .flatMap(to: View.self) { (user) in
+                guard let user = user else {
+                    return try req.view().render("forgottenPasswordConfirmed", ["title": "Password Reset Email Sent"])
+                }
+                
+                let resetTokenString = try CryptoRandom()
+                    .generateData(count: 32)
+                    .base32EncodedString()
+                
+                let resetToken = try ResetPasswordToken(
+                    token: resetTokenString,
+                    userID: user.requireID())
+                
+                return resetToken.save(on: req).flatMap(to: View.self) { _ in
+                    let emailContent = """
+<p>You've requested to reset your password.
+<a href="http://localhost:8080/resetPassword?token=\(resetTokenString)">Click here</a>
+to reset your password.</p>
+"""
+                    let emailAddress = EmailAddress(
+                        email: user.email,
+                        name: user.name)
+                    let fromEmail = EmailAddress(
+                        email: "keithweiss@mac.com",
+                        name: "Vapor TIL")
+                    
+                    let emailConfig = Personalization(
+                        to: [emailAddress],
+                        subject: "Reset Your Password")
+                    let email = SendGridEmail(personalizations: [emailConfig],
+                                              from: fromEmail,
+                                              content: [
+                                                ["type" : "text/html","value" : emailContent]
+                                                ])
+                    let sendGridClient = try req.make(SendGridClient.self)
+                    return try sendGridClient.send([email], on: req.eventLoop)
+                        .flatMap(to: View.self) { _ in
+                            return try req.view().render("forgottenPasswordConfirmed", ["title": "Password Reset Email Sent"])
+                        }
+                }
+        }
+    }
+    
+    func resetPasswordHandler(_ req: Request) throws -> Future<View> {
+        guard let token = try? req.query.get(String.self, at: "token") else {
+            return try req.view().render("resetPassword", ResetPasswordContext(error: true))
+        }
+        
+        return ResetPasswordToken.query(on: req)
+            .filter(\.token == token)
+            .first()
+            .map(to: ResetPasswordToken.self) { token in
+                guard let token = token else {
+                    throw Abort.redirect(to: "/")
+                }
+                
+                return token
+        }
+        .flatMap { token in
+            return token.user.get(on: req)
+                .flatMap { user in
+                    try req.session()["ResetPasswordUser"] = user.id?.uuidString
+                    return token.delete(on: req)
+            }
+            .flatMap {
+                try req.view().render("resetPassword", ResetPasswordContext())
+            }
+        }
+    }
+    
+    func resetPasswordPostHandler(
+      _ req: Request,
+      data: ResetPasswordData) throws -> Future<Response> {
+        guard let resetPasswordUserID = try req.session()["ResetPasswordUser"],
+            let uuid = UUID(resetPasswordUserID) else {
+                return try req.view().render(
+                    "resetPassword",
+                    ResetPasswordContext(error: true))
+                    .encode(for: req)
+        }
+        
+        return User.find(uuid, on: req).flatMap { user in
+            guard let resetPasswordUser = user else {
+                return try req.view().render(
+                    "resetPassword",
+                    ResetPasswordContext(error: true))
+                    .encode(for: req)
+            }
+            
+            let validateData = RegisterData(name: resetPasswordUser.name,
+                                            username: resetPasswordUser.username,
+                                            password: data.password,
+                                            confirmPassword: data.confirmPassword,
+                                            emailAddress: resetPasswordUser.email)
+            
+            do {
+                try validateData.validate()
+            }
+            catch (let error) {
+                var message: String = "Unknown+error"
+                if let error = error as? ValidationError {
+                    message = error.reason
+                }
+                return try req.view().render(
+                                    "resetPassword",
+                                    ResetPasswordContext(message: message))
+                                    .encode(for: req)
+            }
+            
+            try req.session()["ResetPasswordUser"] = nil
+            let newPassword = try BCrypt.hash(data.password)
+            resetPasswordUser.password = newPassword
+            
+            return resetPasswordUser
+                .save(on: req)
+                .transform(to: req.redirect(to: "/login"))
+        }
     }
 }
 
@@ -398,6 +526,27 @@ struct RegisterData: Content {
     let password: String
     let confirmPassword: String
     let emailAddress: String
+}
+
+struct ResetPasswordData: Content {
+    let password: String
+    let confirmPassword: String
+}
+
+struct ResetPasswordContext: Encodable {
+    let error: Bool?
+    let message: String?
+    let title = "Reset Password"
+    
+    init(error: Bool? = false) {
+        self.error = error
+        self.message = nil
+    }
+    
+    init(message: String) {
+        self.error = !message.isEmpty
+        self.message = self.error! ? message : nil
+    }
 }
 
 extension RegisterData: Validatable, Reflectable {
