@@ -39,7 +39,7 @@ public func configure(
     _ config: inout Config,
     _ env: inout Environment,
     _ services: inout Services
-    ) throws {
+) throws {
     // Register providers first
     try services.register(FluentPostgreSQLProvider())
     try services.register(LeafProvider())
@@ -67,28 +67,36 @@ public func configure(
     let databaseName: String
     let databasePort: Int
     var password: String? = .none
-    if (env == .testing) {
-        username = "fweissi"
-        databaseName = "fweissi"
-        if let testPort = Environment.get("DATABASE_PORT") {
-            databasePort = Int(testPort) ?? 5433
-        } else {
-            databasePort = 5433
-        }
-        password = nil
+    
+    let databaseConfig: PostgreSQLDatabaseConfig
+    if let url = Environment.get("DATABASE_URL") {
+        databaseConfig = PostgreSQLDatabaseConfig(url: url)!
     }
     else {
-        username = Environment.get("DATABASE_USER") ?? "fweissi"
-        databaseName = Environment.get("DATABASE_DB") ?? "fweissi"
-        databasePort = 5432
-        password = Environment.get("DATABASE_PASSWORD")
+        if (env == .testing) {
+            username = Environment.get("DATABASE_USER") ?? "fweissi"
+            databaseName = Environment.get("DATABASE_DB") ?? "fweissi"
+            if let testPort = Environment.get("DATABASE_PORT") {
+                databasePort = Int(testPort) ?? 5433
+            } else {
+                databasePort = 5433
+            }
+            password = nil
+        }
+        else {
+            username = Environment.get("DATABASE_USER") ?? "fweissi"
+            databaseName = Environment.get("DATABASE_DB") ?? "fweissi"
+            databasePort = Int(Environment.get("DATABASE_PORT") ?? "5432") ?? 5432
+            password = Environment.get("DATABASE_PASSWORD")
+        }
+        databaseConfig = PostgreSQLDatabaseConfig(
+            hostname: hostname,
+            port: databasePort,
+            username: username,
+            database: databaseName,
+            password: password)
     }
-    let databaseConfig = PostgreSQLDatabaseConfig(
-        hostname: hostname,
-        port: databasePort,
-        username: username,
-        database: databaseName,
-        password: password)
+    
     let database = PostgreSQLDatabase(config: databaseConfig)
     databases.add(database: database, as: .psql)
     services.register(databases)
