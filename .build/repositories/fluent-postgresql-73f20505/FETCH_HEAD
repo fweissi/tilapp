@@ -3,9 +3,8 @@ fbe86ed3e8209ed441e3dc750fa092687af7e5c0	not-for-merge	branch 'dbkit-gm' of http
 58bdc7e55f6ce42459da2f7132a56dc09126a646	not-for-merge	branch 'id-overwrite' of https://github.com/vapor/fluent-postgresql
 4a6abab67764e4375fffc57ee8ba76bd3952c55c	not-for-merge	branch 'id-overwrite-fix' of https://github.com/vapor/fluent-postgresql
 38c802c322898e6dd64d88a44b77fe7c833e1c71	not-for-merge	branch 'lifecycletests' of https://github.com/vapor/fluent-postgresql
-61bf446b256af37e2bdf86a253afdfb48ba795c6	not-for-merge	branch 'master' of https://github.com/vapor/fluent-postgresql
+2afac78693176ea2d8c5fb304dab46837c95fa1f	not-for-merge	branch 'master' of https://github.com/vapor/fluent-postgresql
 78e00fc9d1872f69c163698ebe2a85345ac93ba2	not-for-merge	branch 'multiple-row-insert' of https://github.com/vapor/fluent-postgresql
-21324dad65f3a89fbd94441612814d1ede98b8e2	not-for-merge	branch 'property-wrapper-2' of https://github.com/vapor/fluent-postgresql
 9c86edf40130adb853707516216c0ea97b7c46a9	not-for-merge	branch 'soft-delete' of https://github.com/vapor/fluent-postgresql
 726bbf4adbab0eda3dccd6d91199ac231409671c	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/fluent-postgresql
 48c28aeea743453b666134b04232b86b24fbba1a	not-for-merge	'refs/pull/102/head' of https://github.com/vapor/fluent-postgresql
@@ -20,13 +19,9 @@ c12a844cde31abd9b69657b31a0bb7dcd7025a18	not-for-merge	'refs/pull/110/merge' of 
 58bdc7e55f6ce42459da2f7132a56dc09126a646	not-for-merge	'refs/pull/111/head' of https://github.com/vapor/fluent-postgresql
 b0ad65fa180dd2409d06c7be961437a6f75134e5	not-for-merge	'refs/pull/111/merge' of https://github.com/vapor/fluent-postgresql
 3bc9b9e0d768a2d72627b16ddec927a40d7dd233	not-for-merge	'refs/pull/113/head' of https://github.com/vapor/fluent-postgresql
+1440819e393286bc1fa4c0e65c6b85bd01255a9c	not-for-merge	'refs/pull/113/merge' of https://github.com/vapor/fluent-postgresql
 4a6abab67764e4375fffc57ee8ba76bd3952c55c	not-for-merge	'refs/pull/114/head' of https://github.com/vapor/fluent-postgresql
 93b14072674c8b2be87d9ae8652bc079bfa242ec	not-for-merge	'refs/pull/114/merge' of https://github.com/vapor/fluent-postgresql
-ed0a4da5a80d3b30da04688688ed28e200f5306e	not-for-merge	'refs/pull/116/head' of https://github.com/vapor/fluent-postgresql
-cbf06acfe1b77a841d55cdc374d78003cf58d0f4	not-for-merge	'refs/pull/117/head' of https://github.com/vapor/fluent-postgresql
-cdf0b6c20b7bb470cb7f0275aac8510c90ea92ad	not-for-merge	'refs/pull/118/head' of https://github.com/vapor/fluent-postgresql
-21324dad65f3a89fbd94441612814d1ede98b8e2	not-for-merge	'refs/pull/120/head' of https://github.com/vapor/fluent-postgresql
-5bc386766e7a45a87600facb536d7480df8c78e3	not-for-merge	'refs/pull/121/head' of https://github.com/vapor/fluent-postgresql
 d75163bdabae55abe64e0e3cd228b888f676f341	not-for-merge	'refs/pull/13/head' of https://github.com/vapor/fluent-postgresql
 a7760fc4ee38fd1445c167f44f150f3ea7118db2	not-for-merge	'refs/pull/14/head' of https://github.com/vapor/fluent-postgresql
 b1303459130cfd6a7b170117f7c3af963ce53f9e	not-for-merge	'refs/pull/15/head' of https://github.com/vapor/fluent-postgresql
@@ -41,7 +36,7 @@ d1eda980165e3cbd6a7a4290253c5d46d65fbfe9	not-for-merge	'refs/pull/27/head' of ht
 518f07392ba0d9b83969badf86f8cf4ab5e0c190	not-for-merge	'refs/pull/31/head' of https://github.com/vapor/fluent-postgresql
 ecc7c267b92cd63ec624b9aebb909cc39fee7184	not-for-merge	'refs/pull/33/head' of https://github.com/vapor/fluent-postgresql
 5ac5fa4e54929b287536726e6949710de5133ca3	not-for-merge	'refs/pull/34/head' of https://github.com/vapor/fluent-postgresql
-6fdaade8f0d839b336bc4a54bf10488d0ba12e6f	not-for-merge	'refs/pull/34/merge' of https://github.com/vapor/fluent-postgresql
+0d73fd9780dd24954d5aaaf88d19bb8a80bbce61	not-for-merge	'refs/pull/34/merge' of https://github.com/vapor/fluent-postgresql
 500588579645882869b4917cbf3703f485794b9e	not-for-merge	'refs/pull/37/head' of https://github.com/vapor/fluent-postgresql
 8a2d6a0207d0b2e22377278202101832a06b2a73	not-for-merge	'refs/pull/37/merge' of https://github.com/vapor/fluent-postgresql
 fbe86ed3e8209ed441e3dc750fa092687af7e5c0	not-for-merge	'refs/pull/39/head' of https://github.com/vapor/fluent-postgresql
@@ -97,8 +92,3 @@ d21dcc24fc2576250fa7c3736c848c167e132edd	not-for-merge	tag '1.0.0-rc.3.0.1' of h
 28a6ea239232e0cb1f4bce26f824cd9b8fe7dad2	not-for-merge	tag '1.0.0-rc.4.0.1' of https://github.com/vapor/fluent-postgresql
 2a5b8d147d6937d3cca0951864fcf000590e099e	not-for-merge	tag '1.0.0-rc.4.0.2' of https://github.com/vapor/fluent-postgresql
 b5da9d5ba48314092c1f401cc50b0f0263288181	not-for-merge	tag '1.0.0-rc.4.1' of https://github.com/vapor/fluent-postgresql
-ecb582c80290b7e0cc6fccc8cc0a64a2628d32fb	not-for-merge	tag '2.0.0-alpha.1' of https://github.com/vapor/fluent-postgresql
-d5fe3aa9d82c5f64d1b2395b0e2d24a13c998b77	not-for-merge	tag '2.0.0-alpha.1.1' of https://github.com/vapor/fluent-postgresql
-918cfab4b3342202769d82a809630d86203ac9e0	not-for-merge	tag '2.0.0-alpha.1.2' of https://github.com/vapor/fluent-postgresql
-84c69a904ae152ab9c49fb7a47de5817907b94e0	not-for-merge	tag '2.0.0-alpha.2' of https://github.com/vapor/fluent-postgresql
-61bf446b256af37e2bdf86a253afdfb48ba795c6	not-for-merge	tag '2.0.0-alpha.3' of https://github.com/vapor/fluent-postgresql

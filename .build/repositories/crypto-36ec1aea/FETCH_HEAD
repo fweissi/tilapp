@@ -1,7 +1,6 @@
 df8eb7d8ae51787b3a0628aa3975e67666da936c	not-for-merge	branch '3' of https://github.com/vapor/crypto
-75ea2cea6c052e2580526a62417789e6202ceb52	not-for-merge	branch 'SR-10783' of https://github.com/vapor/crypto
 066eb43cb2322e709e20a9a8632b8174dd7d0221	not-for-merge	branch 'gm' of https://github.com/vapor/crypto
-06d26edb8e28295bb7103b4f950d5ea58d634c1b	not-for-merge	branch 'master' of https://github.com/vapor/crypto
+e60bc60b74b9b976800a44369e1067180fa59cba	not-for-merge	branch 'master' of https://github.com/vapor/crypto
 04f882e39b7fef8a5815a1faec5405f9366744d7	not-for-merge	branch 'nio' of https://github.com/vapor/crypto
 4b85405430df1892ee3aa1554bdb477e96cf46ad	not-for-merge	branch 'opt' of https://github.com/vapor/crypto
 8b241a6943a9d0478e8a91ad2a05ccd0b7d2308f	not-for-merge	branch 'random-int-public' of https://github.com/vapor/crypto
@@ -76,17 +75,12 @@ b37fd6bfec422c30c26a1faf79193b613d9fde3e	not-for-merge	'refs/pull/66/head' of ht
 883bb0a96f688fec702e2d8e59ae6e2b9b5eca45	not-for-merge	'refs/pull/80/head' of https://github.com/vapor/crypto
 0b5d0fe3ad36794c70911bceafe29d2de1a07e2c	not-for-merge	'refs/pull/81/head' of https://github.com/vapor/crypto
 6c6301e3912bd21c1d0c6673213ad0773022d310	not-for-merge	'refs/pull/82/head' of https://github.com/vapor/crypto
-8538ceaa13a77727e8b32913e6b5cca2f546c268	not-for-merge	'refs/pull/86/head' of https://github.com/vapor/crypto
-8eab768563a308e4a5101ec4a15cc744fcb7e626	not-for-merge	'refs/pull/86/merge' of https://github.com/vapor/crypto
+1d3094f22e55b5c4ecbf75fba69bc279ba9845bf	not-for-merge	'refs/pull/86/head' of https://github.com/vapor/crypto
+2afb994dd8685744f4304804586e9a5aec521e54	not-for-merge	'refs/pull/86/merge' of https://github.com/vapor/crypto
 3c6f1452d4302b765ba4b835496a1b389193ad94	not-for-merge	'refs/pull/88/head' of https://github.com/vapor/crypto
 5ff5c80dc6f8f572b40f5846dfa7adc83f712017	not-for-merge	'refs/pull/89/head' of https://github.com/vapor/crypto
-3f79377af91289471d9ed75e02766ca5f6edc0d2	not-for-merge	'refs/pull/89/merge' of https://github.com/vapor/crypto
+ff43755deff463036b97398e1d7876301ba120a6	not-for-merge	'refs/pull/89/merge' of https://github.com/vapor/crypto
 2f2ffe9b05a3446e46f213a66661e84f73f30fdd	not-for-merge	'refs/pull/9/head' of https://github.com/vapor/crypto
-fd1d7da9b0858685ba140fe3d710dd4d40b5bd68	not-for-merge	'refs/pull/91/head' of https://github.com/vapor/crypto
-75ea2cea6c052e2580526a62417789e6202ceb52	not-for-merge	'refs/pull/93/head' of https://github.com/vapor/crypto
-e458d2c266b64cc28cc39ffeeba63bbd5428324d	not-for-merge	'refs/pull/93/merge' of https://github.com/vapor/crypto
-dabc884eb01a2e186f5b71f545e843b6bff8cb60	not-for-merge	'refs/pull/94/head' of https://github.com/vapor/crypto
-039756648b387fc5b8542d3e67049224e280c98d	not-for-merge	'refs/pull/96/head' of https://github.com/vapor/crypto
 38ef9d35f7ae4d6f4b6c2088e303b27773057e3d	not-for-merge	tag '0.0.0' of https://github.com/vapor/crypto
 5b2e08acddb6bdf01bd76687094285995e0da565	not-for-merge	tag '0.1.0' of https://github.com/vapor/crypto
 e81e6b69d0e8ab45fcf2d6b33eb808f3242118f5	not-for-merge	tag '0.2.0' of https://github.com/vapor/crypto
@@ -126,5 +120,3 @@ e7b51ee4d46723734891ca904a4ab6b5f9e26959	not-for-merge	tag '3.1.0' of https://gi
 bce9ac891c9b33fc045deda713e0d976d13b749a	not-for-merge	tag '3.3.1' of https://github.com/vapor/crypto
 45bb12d13cdec80dbd1cc0685ea002e51ab83439	not-for-merge	tag '3.3.2' of https://github.com/vapor/crypto
 df8eb7d8ae51787b3a0628aa3975e67666da936c	not-for-merge	tag '3.3.3' of https://github.com/vapor/crypto
-9d5e780ad8f621e14226f0c2824648a9c062d37c	not-for-merge	tag '4.0.0-alpha.1' of https://github.com/vapor/crypto
-06d26edb8e28295bb7103b4f950d5ea58d634c1b	not-for-merge	tag '4.0.0-alpha.2' of https://github.com/vapor/crypto
