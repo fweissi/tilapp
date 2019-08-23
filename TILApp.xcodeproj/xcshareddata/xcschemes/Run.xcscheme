@@ -66,36 +66,6 @@
             value = "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"
             isEnabled = "YES">
          </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_URL"
-            value = "postgres://pwtpavinaypocb:09fc0864512a3d85ed6ab5ca3813914d5b0820696ba1c436e73537f5598e508d@ec2-23-23-228-132.compute-1.amazonaws.com:5432/d4638a9otol3q0"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_HOSTNAME"
-            value = "localhost"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_DB"
-            value = "fweissi"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_PORT"
-            value = "5432"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_USERNAME"
-            value = "fweissi"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "DATABASE_PASSWORD"
-            value = ""
-            isEnabled = "NO">
-         </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
