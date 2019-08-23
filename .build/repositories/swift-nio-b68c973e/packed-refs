@@ -1,5 +1,4 @@
 # pack-refs with: peeled fully-peeled 
-b7b75e654e5f9de2c1d1f2ba9c37d192efb199a6 refs/heads/feature/perf-ci
 901a25a4cbc1e157729d022690a65d27968004f1 refs/heads/gh-pages
 ca9278670fa0dbe99242efb6f053a8d1ad56752c refs/heads/master
 2c3ef591bc18737f6fcc9d209ad632815e47b91e refs/heads/nio-1.0
@@ -22,9 +21,7 @@ ea0da16e6d9006d804bef7636249237b4929490a refs/pull/100/head
 4376f8c6d004c073d9b8c3cfa243b5903bc5bb56 refs/pull/100/merge
 3e38e32d5e2a2f2b1e5d6620c91793344cb53cef refs/pull/1000/head
 3222b7b9db24134eab5289596fa60717d255460f refs/pull/1001/head
-f772b4c0800644014da6996a6c615d6950249d51 refs/pull/1001/merge
 d0fe3cb4f64507b15f76e487cf547b595c08827b refs/pull/1002/head
-60ac9665120dc93d7c79085a8b3a8b1debeb331d refs/pull/1002/merge
 97bd7d3b0e2259503844c52d8acca253340ca8f7 refs/pull/1004/head
 d7d8fff539a3ee64fc63fae2d63c1ef7b51b2bc9 refs/pull/1005/head
 2c3237a36dc32ca1b993452cc2e8eaf7174f767e refs/pull/1006/head

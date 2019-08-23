@@ -3,7 +3,7 @@
 cd6fe64bb9fd98ccbe4788208c4a4f373e966a7a	not-for-merge	branch 'fix-indentation' of https://github.com/vapor/postgresql
 144a68bf86136d505662db1966caed391b72686e	not-for-merge	branch 'fix-leaking-event-loop-group' of https://github.com/vapor/postgresql
 486c37862da1073f35aed4980ea03c591ab3555e	not-for-merge	branch 'json-type' of https://github.com/vapor/postgresql
-3d8176215a94cff40331acf2b30543dde02c4e84	not-for-merge	branch 'master' of https://github.com/vapor/postgresql
+74d49fd4dcd9e2e47bb56f63ebaf27ea60706a6b	not-for-merge	branch 'master' of https://github.com/vapor/postgresql
 47651967f702efc32e7da3010d75d0c5e8ff5bd7	not-for-merge	branch 'nio-connection-leak' of https://github.com/vapor/postgresql
 bf1f39d75fd6c09b365fb988d5ff1e5b0ddf9d3d	not-for-merge	branch 'translating-stream-close' of https://github.com/vapor/postgresql
 bdb1eaf53a27d51583102c7ffcdd1261787637b4	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/postgresql
@@ -37,6 +37,9 @@ da3549b1e361edb7873a3243071ba5e00d24bf1b	not-for-merge	'refs/pull/132/head' of h
 398156692351c0ff4bd5f7444ccd61b24f40ef16	not-for-merge	'refs/pull/133/head' of https://github.com/vapor/postgresql
 345da4fd2183a844b40db3676cf300e95b9f3fec	not-for-merge	'refs/pull/134/head' of https://github.com/vapor/postgresql
 4ed9831ec059d968a9255ee303020437f3fffab2	not-for-merge	'refs/pull/135/head' of https://github.com/vapor/postgresql
+c6b9f4e79189190469767189b27669334be446b8	not-for-merge	'refs/pull/138/head' of https://github.com/vapor/postgresql
+172d597d1b32641e342addd0484999d24481a69f	not-for-merge	'refs/pull/139/head' of https://github.com/vapor/postgresql
+f43b3f9f1b3b910a199dd29331cd197d6592b352	not-for-merge	'refs/pull/139/merge' of https://github.com/vapor/postgresql
 fa0511e4e93f8b06111d5da83bdc0d912677c91c	not-for-merge	'refs/pull/15/head' of https://github.com/vapor/postgresql
 47e39a6cdc458ab543dba1c76a9205135f834c23	not-for-merge	'refs/pull/16/head' of https://github.com/vapor/postgresql
 b3ef0f658b1d5f487342a20c0ee8ff6d7b41a86a	not-for-merge	'refs/pull/17/head' of https://github.com/vapor/postgresql
@@ -133,3 +136,5 @@ d34cf720a43ea2ef8dbf2ba7d9f18d39bb1eb795	not-for-merge	tag '1.2.2' of https://gi
 4388d3c3df4d172985cca932e5a701f35926a05e	not-for-merge	tag '1.3.0' of https://github.com/vapor/postgresql
 830abbc80de4fad428987bea1bf3d43013f17cc1	not-for-merge	tag '1.4.0' of https://github.com/vapor/postgresql
 41cec2846f9cdd8233675da0d256efa3b8d62b21	not-for-merge	tag '1.4.1' of https://github.com/vapor/postgresql
+4b25340540ef610665fbfa929999991d0d1421f9	not-for-merge	tag '2.0.0-alpha.1' of https://github.com/vapor/postgresql
+74d49fd4dcd9e2e47bb56f63ebaf27ea60706a6b	not-for-merge	tag '2.0.0-alpha.2' of https://github.com/vapor/postgresql

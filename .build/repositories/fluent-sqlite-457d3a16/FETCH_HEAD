@@ -1,7 +1,7 @@
 c32f5bda84bf4ea691d19afe183d40044f579e11	not-for-merge	branch '3' of https://github.com/vapor/fluent-sqlite
 2a66326191e7dc7ded233b4ec5cce9e4a93f5d70	not-for-merge	branch 'docs' of https://github.com/vapor/fluent-sqlite
 edd287ae4c8eaa5b38a0e28afc5c897bd1e594fe	not-for-merge	branch 'lifecycle' of https://github.com/vapor/fluent-sqlite
-99dcbe22600324ad959c5e8c0e1c6fa0233667bf	not-for-merge	branch 'master' of https://github.com/vapor/fluent-sqlite
+64187944b0124fdc7df0c0eead58ee1990b89083	not-for-merge	branch 'master' of https://github.com/vapor/fluent-sqlite
 82571420d7840e35fa129a084b4f2a0744cf903d	not-for-merge	branch 'multiple-row-insert' of https://github.com/vapor/fluent-sqlite
 887e32aececc715449afc9a34ce394d06f9d6ae7	not-for-merge	branch 'nio' of https://github.com/vapor/fluent-sqlite
 887e32aececc715449afc9a34ce394d06f9d6ae7	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/fluent-sqlite
@@ -27,6 +27,10 @@ e4c9794759e4d5e9f025a3843af515366669a247	not-for-merge	'refs/pull/22/head' of ht
 7674025fc07ea5e9ee4e16b75ed3b543c28f0ebb	not-for-merge	'refs/pull/27/head' of https://github.com/vapor/fluent-sqlite
 7161530683a52ce0af60d73e827ec160bc562b5c	not-for-merge	'refs/pull/27/merge' of https://github.com/vapor/fluent-sqlite
 d17868eb346fa22330fd4fa4b7d9d2cf6eecf608	not-for-merge	'refs/pull/29/head' of https://github.com/vapor/fluent-sqlite
+625f6d4ced9e1476c7a90a8cbcfb4c9e4fb10ff0	not-for-merge	'refs/pull/31/head' of https://github.com/vapor/fluent-sqlite
+151575dd8ffb1cdb5b007db9a5538f4e889a68ac	not-for-merge	'refs/pull/32/head' of https://github.com/vapor/fluent-sqlite
+594e4c6abf356b3e76f6b817564f1afe1c627126	not-for-merge	'refs/pull/33/head' of https://github.com/vapor/fluent-sqlite
+e897421daf9d63a5f5cac85afbcfd6d027950e79	not-for-merge	'refs/pull/34/head' of https://github.com/vapor/fluent-sqlite
 c32f5bda84bf4ea691d19afe183d40044f579e11	not-for-merge	tag '3.0.0' of https://github.com/vapor/fluent-sqlite
 a2d70d95b660631d591a7aa1ed1a65c91f67acf3	not-for-merge	tag '3.0.0-rc.1' of https://github.com/vapor/fluent-sqlite
 218d7af5201ee769a5479fbae32a4a1ca4f25c8e	not-for-merge	tag '3.0.0-rc.2' of https://github.com/vapor/fluent-sqlite
@@ -37,3 +41,6 @@ d2f91d5cfb60982d7e6107d15804f8ee5db4f8df	not-for-merge	tag '3.0.0-rc.3' of https
 3fd2c7f844a07ffd21ee0e09137f682a6ed6f479	not-for-merge	tag '3.0.0-rc.4' of https://github.com/vapor/fluent-sqlite
 83075582da7414e5b3cdf179266381dec5a106b0	not-for-merge	tag '3.0.0-rc.4.0.1' of https://github.com/vapor/fluent-sqlite
 8262e8aa3f66a4f1d5c5d6cbddfd0a3b12cf5e31	not-for-merge	tag '3.0.0-rc.4.0.2' of https://github.com/vapor/fluent-sqlite
+eadc7be2482a7c4cbf3b2f8da07a962f098abcf0	not-for-merge	tag '4.0.0-alpha.1' of https://github.com/vapor/fluent-sqlite
+f3f3c92857793594b8ef0b308f0b42416a40c1f7	not-for-merge	tag '4.0.0-alpha.2' of https://github.com/vapor/fluent-sqlite
+64187944b0124fdc7df0c0eead58ee1990b89083	not-for-merge	tag '4.0.0-alpha.3' of https://github.com/vapor/fluent-sqlite

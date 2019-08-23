@@ -1,30 +1,25 @@
 74cfbea629d4aac34a97cead2447a6870af1950b	not-for-merge	branch '3' of https://github.com/vapor/console
 62615573f5fa84222122ec4cb04674b70cd6718b	not-for-merge	branch '4' of https://github.com/vapor/console
-055ea317a85dd6587fe0742b0dcb3aa1dff7c6d1	not-for-merge	branch 'command-is-strict' of https://github.com/vapor/console
-936c8a0b3e0821ff8e7b12dea058854fb3b8081d	not-for-merge	branch 'dynamic-access' of https://github.com/vapor/console
-51660d71f8a4976a1f8e34036ffb228254292368	not-for-merge	branch 'example-app' of https://github.com/vapor/console
-42a0230736abce599528a3355aef97128b977b1d	not-for-merge	branch 'master' of https://github.com/vapor/console
+f34182e8f304d05a3d8f7bbcff73d2c28e930829	not-for-merge	branch 'logging-kit' of https://github.com/vapor/console
+63d95667d88b7d973161acb74e47d45e966bdeed	not-for-merge	branch 'master' of https://github.com/vapor/console
 b42e71956d80ac94ad9423447335d7ed0758f849	not-for-merge	branch 'nio' of https://github.com/vapor/console
 4d65140df10eb480176986539994de22a175210a	not-for-merge	branch 'optional-argument' of https://github.com/vapor/console
 410810de3434d3878aca7f2d06810f9fb5c33edf	not-for-merge	branch 'sandbox' of https://github.com/vapor/console
-855caa4d28760c30560fe10f82efcc29c8d0c860	not-for-merge	branch 'strict-signature' of https://github.com/vapor/console
-7780dd5f6a755242e92b690f208eaa274dd89c38	not-for-merge	branch 'unoptionalizing-help' of https://github.com/vapor/console
 28df75da5749f60fdb52b256159af2b21cc8dbe5	not-for-merge	branch 'vapor-2' of https://github.com/vapor/console
 4e64182afa85200bedd718edb1fd656c7d949fa5	not-for-merge	'refs/pull/1/head' of https://github.com/vapor/console
 1088e007ef3d13e9418c458ca9b59c1bcef8b41d	not-for-merge	'refs/pull/100/head' of https://github.com/vapor/console
-b1a873cb16bab95d38a474a44612da7b591b11e4	not-for-merge	'refs/pull/103/head' of https://github.com/vapor/console
-46a19589fedd13847e48b755da1ca19fa58e64bd	not-for-merge	'refs/pull/103/merge' of https://github.com/vapor/console
+5baa59965629755e5ef089fdf90ca2901daae334	not-for-merge	'refs/pull/103/head' of https://github.com/vapor/console
 aae5fcd2a1ee3f1742528bf89ae0da005a529c14	not-for-merge	'refs/pull/104/head' of https://github.com/vapor/console
 aa5e45a7d38834bacf76bbb767399fd696bdcf1b	not-for-merge	'refs/pull/105/head' of https://github.com/vapor/console
-7780dd5f6a755242e92b690f208eaa274dd89c38	not-for-merge	'refs/pull/107/head' of https://github.com/vapor/console
-4a306b799b51e36e66ede95cf04118a2ccce6543	not-for-merge	'refs/pull/107/merge' of https://github.com/vapor/console
-855caa4d28760c30560fe10f82efcc29c8d0c860	not-for-merge	'refs/pull/109/head' of https://github.com/vapor/console
-2963aa7d875c417b6a11520e23308a2de9149d58	not-for-merge	'refs/pull/109/merge' of https://github.com/vapor/console
+f725b5b2a2953865616a58571195bb04fd109415	not-for-merge	'refs/pull/107/head' of https://github.com/vapor/console
+724610b57c67819919fee6c5b4535a55fb907595	not-for-merge	'refs/pull/109/head' of https://github.com/vapor/console
 aeb207cef8cfce619ba9a36150cacba2fca8ff15	not-for-merge	'refs/pull/11/head' of https://github.com/vapor/console
-936c8a0b3e0821ff8e7b12dea058854fb3b8081d	not-for-merge	'refs/pull/110/head' of https://github.com/vapor/console
-e629e4fb23422ac90f627508ffe024b8347d9790	not-for-merge	'refs/pull/110/merge' of https://github.com/vapor/console
+044e7112837160d37df1995768c87ecfc5697c75	not-for-merge	'refs/pull/110/head' of https://github.com/vapor/console
 51660d71f8a4976a1f8e34036ffb228254292368	not-for-merge	'refs/pull/111/head' of https://github.com/vapor/console
-47134c74162a54d2f55fdcb93a37e407d1a7f761	not-for-merge	'refs/pull/111/merge' of https://github.com/vapor/console
+6f7c11a04f7b2e5521823c043e2eef1c4dfcb156	not-for-merge	'refs/pull/112/head' of https://github.com/vapor/console
+f34182e8f304d05a3d8f7bbcff73d2c28e930829	not-for-merge	'refs/pull/114/head' of https://github.com/vapor/console
+7e8dfa195f407d267e53cb8c32ecbf042a0c3316	not-for-merge	'refs/pull/114/merge' of https://github.com/vapor/console
+1f9e94c801bfce1fd82a742e3b86bdb5a14f6d86	not-for-merge	'refs/pull/116/head' of https://github.com/vapor/console
 1888825c3260d632fbfbf1591e1e43de20c4e6df	not-for-merge	'refs/pull/12/head' of https://github.com/vapor/console
 707406136757a934f8d071a377be5dd94516ed4d	not-for-merge	'refs/pull/13/head' of https://github.com/vapor/console
 8cb6c18ca6e415836329b604368c0233b87e490e	not-for-merge	'refs/pull/14/head' of https://github.com/vapor/console
@@ -91,7 +86,6 @@ fd0516fae4a0a349fcba49d49944903aa6081617	not-for-merge	'refs/pull/79/head' of ht
 c31e8f146df3c82770fdae1a1ed645805f59f2a1	not-for-merge	'refs/pull/81/head' of https://github.com/vapor/console
 ecdf576d3ab34000709b2d0b429279a269fa1b62	not-for-merge	'refs/pull/82/head' of https://github.com/vapor/console
 055ea317a85dd6587fe0742b0dcb3aa1dff7c6d1	not-for-merge	'refs/pull/83/head' of https://github.com/vapor/console
-3da675829ee4eef516ba62f9013de0a84c8f72ab	not-for-merge	'refs/pull/83/merge' of https://github.com/vapor/console
 62615573f5fa84222122ec4cb04674b70cd6718b	not-for-merge	'refs/pull/84/head' of https://github.com/vapor/console
 575b07620b8b6dcaf9ef5ad0776e20ecff149949	not-for-merge	'refs/pull/85/head' of https://github.com/vapor/console
 ed2b24e240d9746d15d3864518fed4ef4003ee93	not-for-merge	'refs/pull/86/head' of https://github.com/vapor/console
@@ -152,3 +146,4 @@ a69a7ac19a89beec95672f25a8001723797a2566	not-for-merge	tag '3.0.0-rc.2.1.1' of h
 aa38c8ae4d3d41f5ea553712fea3b0e80fcb0a1a	not-for-merge	tag '3.0.4' of https://github.com/vapor/console
 d6cf07af59ae63cd95c4b5f98cf1f25627750fd1	not-for-merge	tag '3.1.0' of https://github.com/vapor/console
 74cfbea629d4aac34a97cead2447a6870af1950b	not-for-merge	tag '3.1.1' of https://github.com/vapor/console
+252a8b8e22cc70ebe8a073b241b7275a3b3880d9	not-for-merge	tag '4.0.0-alpha.1' of https://github.com/vapor/console

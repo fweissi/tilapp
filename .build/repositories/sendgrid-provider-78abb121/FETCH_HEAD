@@ -1,0 +1,44 @@
+dd565b84d1f666c72591c94ef95a1f505eb4daee	not-for-merge	branch '2.2.1' of https://github.com/vapor-community/sendgrid-provider
+46a02d41c3085ad441659dcfaec01acff2a6b5dd	not-for-merge	branch 'contentfix' of https://github.com/vapor-community/sendgrid-provider
+4fca9d02fee4f343666e73651fedd4d26ed048e8	not-for-merge	branch 'master' of https://github.com/vapor-community/sendgrid-provider
+8a9f8a6794f12f9e2ec08640521dc71aae5e6881	not-for-merge	'refs/pull/1/head' of https://github.com/vapor-community/sendgrid-provider
+107af633b71d155e2a9b5c563186953d2c92ba25	not-for-merge	'refs/pull/10/head' of https://github.com/vapor-community/sendgrid-provider
+cd60db53482d135543ed1f7ae7b628bef4edb5b0	not-for-merge	'refs/pull/11/head' of https://github.com/vapor-community/sendgrid-provider
+2230bef04f72293c0d8341c4b87d8ec706a4088c	not-for-merge	'refs/pull/12/head' of https://github.com/vapor-community/sendgrid-provider
+f4300d1cbd210adc93c22a0222e448d0d4ede12f	not-for-merge	'refs/pull/13/head' of https://github.com/vapor-community/sendgrid-provider
+8bc9d55ece08692eccf69b687b48b86ce5e84e16	not-for-merge	'refs/pull/17/head' of https://github.com/vapor-community/sendgrid-provider
+5d3d0dd5503fb924eb12089327ea551f54720b02	not-for-merge	'refs/pull/19/head' of https://github.com/vapor-community/sendgrid-provider
+943645c684da50112eb78a4027da2a6e9107d41b	not-for-merge	'refs/pull/2/head' of https://github.com/vapor-community/sendgrid-provider
+bdfa56a2950b84f90d8df4fd10f139009f7d9287	not-for-merge	'refs/pull/2/merge' of https://github.com/vapor-community/sendgrid-provider
+46a02d41c3085ad441659dcfaec01acff2a6b5dd	not-for-merge	'refs/pull/21/head' of https://github.com/vapor-community/sendgrid-provider
+9d82dcf950ca1c7c3eaeb70c5275c3925173c4e1	not-for-merge	'refs/pull/22/head' of https://github.com/vapor-community/sendgrid-provider
+19bd887234c25a29e61663f0f990c5d88f8fb103	not-for-merge	'refs/pull/24/head' of https://github.com/vapor-community/sendgrid-provider
+e9d3c46213629101de3e52a9d8e5418375ccec6c	not-for-merge	'refs/pull/25/head' of https://github.com/vapor-community/sendgrid-provider
+4345901a6751c1166be55eda7a6a7d3817126c2e	not-for-merge	'refs/pull/27/head' of https://github.com/vapor-community/sendgrid-provider
+82bf41f42af0b4c3dc97929bbe76644e0df741e5	not-for-merge	'refs/pull/29/head' of https://github.com/vapor-community/sendgrid-provider
+caa873265caa32649311ce6f6770e2004fad4f52	not-for-merge	'refs/pull/3/head' of https://github.com/vapor-community/sendgrid-provider
+e546441265564f764c231b7ca4aeffee8ac16a2f	not-for-merge	'refs/pull/30/head' of https://github.com/vapor-community/sendgrid-provider
+044267347401323faf5e15c63e57fc6b93c9ec17	not-for-merge	'refs/pull/30/merge' of https://github.com/vapor-community/sendgrid-provider
+2df2a167f4fdc7f94c14a6676c8986c5a93db382	not-for-merge	'refs/pull/5/head' of https://github.com/vapor-community/sendgrid-provider
+85deaf319590e2ef5b7e1fb0aa37f9be753eac2f	not-for-merge	'refs/pull/6/head' of https://github.com/vapor-community/sendgrid-provider
+b89509727fa3a5babb43a13238b043ac7901720a	not-for-merge	'refs/pull/9/head' of https://github.com/vapor-community/sendgrid-provider
+7a704f3b41cde6bc0ad7d8d363a8ac7ec8ef09de	not-for-merge	tag '0.1.0' of https://github.com/vapor-community/sendgrid-provider
+85022d0cdd1538dbf45cad46b79e013141a21f6e	not-for-merge	tag '0.2.0' of https://github.com/vapor-community/sendgrid-provider
+c890908d8ba119302ba4d412f6214f1add6b03bf	not-for-merge	tag '0.2.1' of https://github.com/vapor-community/sendgrid-provider
+b89509727fa3a5babb43a13238b043ac7901720a	not-for-merge	tag '1.0.0' of https://github.com/vapor-community/sendgrid-provider
+26e9f9af72c480013394f28aaa9f272c5fb24316	not-for-merge	tag '2.0.0' of https://github.com/vapor-community/sendgrid-provider
+885d3fb6aaa43b16910c72c717a8aa94055a5d54	not-for-merge	tag '2.1.0' of https://github.com/vapor-community/sendgrid-provider
+ad2a6d6d4e8fe95317c026dd1ee9353c20994151	not-for-merge	tag '2.2.0' of https://github.com/vapor-community/sendgrid-provider
+dd565b84d1f666c72591c94ef95a1f505eb4daee	not-for-merge	tag '2.2.1' of https://github.com/vapor-community/sendgrid-provider
+4547bcf26cc371578b2e64683637703ce6231ac9	not-for-merge	tag '3.0.0' of https://github.com/vapor-community/sendgrid-provider
+3ba1689b2f6c56478efdd0700c348a4bd20cebe0	not-for-merge	tag '3.0.0-rc.1' of https://github.com/vapor-community/sendgrid-provider
+9a05b9067db51641c005b8e989d940028de5d1b9	not-for-merge	tag '3.0.0-rc.1.1' of https://github.com/vapor-community/sendgrid-provider
+4547bcf26cc371578b2e64683637703ce6231ac9	not-for-merge	tag '3.0.0-rc.1.2' of https://github.com/vapor-community/sendgrid-provider
+4547bcf26cc371578b2e64683637703ce6231ac9	not-for-merge	tag '3.0.0-rc.1.2.0' of https://github.com/vapor-community/sendgrid-provider
+9a05b9067db51641c005b8e989d940028de5d1b9	not-for-merge	tag '3.0.0-rc1.1' of https://github.com/vapor-community/sendgrid-provider
+400914c4c54b34240cf7c99ce0464b1771f969c2	not-for-merge	tag '3.0.1' of https://github.com/vapor-community/sendgrid-provider
+f8228592e6f74acf78105b67d58e9650b5d289f7	not-for-merge	tag '3.0.2' of https://github.com/vapor-community/sendgrid-provider
+45e61ff516a50da74821f869d1dce4746ffa7224	not-for-merge	tag '3.0.3' of https://github.com/vapor-community/sendgrid-provider
+f57087a5da4e9cdd8fc61855ffb95b4150d15709	not-for-merge	tag '3.0.4' of https://github.com/vapor-community/sendgrid-provider
+3b71cae7ed953a128a7bb0381b80b31bc7f1d8e5	not-for-merge	tag '3.0.5' of https://github.com/vapor-community/sendgrid-provider
+4fca9d02fee4f343666e73651fedd4d26ed048e8	not-for-merge	tag '3.0.6' of https://github.com/vapor-community/sendgrid-provider
