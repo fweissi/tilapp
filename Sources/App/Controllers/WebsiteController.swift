@@ -338,7 +338,7 @@ struct WebsiteController: RouteCollection {
                 return resetToken.save(on: req).flatMap(to: View.self) { _ in
                     let emailContent = """
 <p>You've requested to reset your password.
-<a href="http://localhost:8080/resetPassword?token=\(resetTokenString)">Click here</a>
+<a href="https://todayilearnedapp.herokuapp.com/resetPassword?token=\(resetTokenString)">Click here</a>
 to reset your password.</p>
 """
                     let emailAddress = EmailAddress(
