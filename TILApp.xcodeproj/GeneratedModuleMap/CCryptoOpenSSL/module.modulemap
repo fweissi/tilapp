@@ -1,4 +1,0 @@
-module CCryptoOpenSSL {
-    umbrella "/Users/fweissi/Projects/tilapp/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
-    export *
-}
